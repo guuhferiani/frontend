@@ -1,0 +1,11 @@
+
+:root, :root[data-theme='dark'] {
+    --primary-color: #F0F0F0;  /* cor de texto */
+    --primary-bg-color: #1133e2;  /* cor de fundo */
+    
+}
+
+:root [data-theme='light'] {
+    --primary-color: #0B0B0F;
+    --primary-bg-color: #E9E9E9;
+}
