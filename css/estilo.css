@@ -76,4 +76,7 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-
+.header-logo .logo {
+    width: 3.25rem;
+    height: 3.25rem;
+}
