@@ -1,11 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
 :root, :root[data-theme='dark'] {
     --primary-color: #F0F0F0;  /* cor de texto */
-    --primary-bg-color: #1133e2;  /* cor de fundo */
-    
+    --secondary-color: #d82424; /* 2º cor de texto */
+    --primary-bg-color: #111217;  /* cor de fundo  */
+    /* bg = background = plano de fundo */
+    --secondary-bg-color: #28292E;
+    --primary-border-color: #28292E;
+    --secundary-border-color: #56575A;
+
+    --title-color: #F0f0f0;
+    --text-color: #9a9a9c;
+    --link-color: #9a9a9c;
+    --icon-color: #c7c8c9;
+
 }
 
 :root [data-theme='light'] {
     --primary-color: #0B0B0F;
     --primary-bg-color: #E9E9E9;
+    --secondary-bg-color: #C7c8c9;
+    --primary-border-color:  #C7c8c9;
+    --secondary-border-color: #9a9a9c;
+
+    --title-color: #0b0b0f;
+    --text-color: #28292e;
+    --link-color: #28292e;
+    --icon-color: #56575a;
 }
+/*
+definindo variáveis de cores para um tema claro e um tema escuro
+
+ROOT refere-se ao elemento raiz do documento HTML
+
+seletor :root define as variáveis globais
+
+Isso oferece uma maneira flexível de definir valores
+que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um único lugar.
+*/
+
+html [data-theme='light'] .brand-logo {
+    filter:invert(1);
+}
+html [data-theme='light'] .tecnologias-logo {
+    filter: invert(80%);
+}
+/*  (*) reset do CSS */
+* {
+   margin: 0px;  /* margem */
+   padding: 0px;  /* preenchimento // espaçamento */ 
+   box-sizing: border-box;
+   vertical-align: baseline;
+   list-style: none;
+   scrollbar-width: thin;
+   scrollbar-color: var(--secondary-bg-color) transparent;
+}
+body {
+    background: var(--primary-bg-color);
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+/* conteudo extra */
+
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+

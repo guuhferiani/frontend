@@ -5,29 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Gustavo Feriani | Portfolio </title>
     <!-- tag titulo -->
-    <link rel="stylesheet" href="css/estilo.css"> 
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <header> <!-- cabeçalho -->
-        <nav>
-            <ul>
-                <li>
-                   <a href="#home"> Home </a>
+    <header id="header"> <!-- cabeçalho -->
+        <nav class="header-nav">
+            <ul class="menu menu-principal">
+                <li class="menu-item">
+                   <a href="#home" class="menu-link active"> 
+                       <span class="menu-text"> Home </span> 
+                   </a>
                 </li>
-                <li>
-                    <a href="#projetos"> Projetos </a>
-                 </li>
-                 <li>
-                    <a href="#sobre"> Sobre </a>
-                 </li>
-                 <li>
-                    <a href="#contato"> Contato </a>
-                 </li>
+                <li class="menu-item">
+                    <a href="#projetos" class="menu-link">
+                       <span class="menu-text"> Projeto </span> 
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#sobre" class="menu-link">
+                       <span class="menu-text"> Projeto </span> 
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contato" class="menu-link">
+                       <span class="menu-text"> Contato </span> 
+                    </a>
+                </li>
             </ul>
-            
         </nav>
-    </header>
+        <div class="header-brand">  <!-- area do logo -->
+            <a href="#home">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div><!-- Fim area do logo -->
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i> 
+        </div>
+    </header> 
+    
+
     <!-- fim cabeçalho -- SHIFT + ALT + A  -->
     
 </body>
