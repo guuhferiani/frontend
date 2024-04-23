@@ -2,7 +2,7 @@
 
 :root, :root[data-theme='dark'] {
     --primary-color: #F0F0F0;  /* cor de texto */
-    --secondary-color: #d82424; /* 2º cor de texto */
+    
     --primary-bg-color: #111217;  /* cor de fundo  */
     /* bg = background = plano de fundo */
     --secondary-bg-color: #28292E;
@@ -50,7 +50,17 @@ html [data-theme='light'] .tecnologias-logo {
    margin: 0px;  /* margem */
    padding: 0px;  /* preenchimento // espaçamento */ 
    box-sizing: border-box;
-   vertical-align: baseline;
+    /* 
+    A propriedade box-sizing em CSS é usada para alterar o modelo de caixa de um elemento.
+    O valor border-box é usado para garantir que a largura e a altura de um elemento
+    incluam as bordas e o preenchimento, em vez de apenas o conteúdo.
+    Quando você define box-sizing: border-box;, está dizendo ao navegador
+    para calcular a largura e a altura total de um elemento,
+    incluindo a largura das bordas e o preenchimento, e não apenas o conteúdo.
+    */
+   
+
+   /* vertical-align: baseline; */
    list-style: none;
    scrollbar-width: thin;
    scrollbar-color: var(--secondary-bg-color) transparent;
@@ -66,7 +76,9 @@ body {
 #header {
     display: flex;
     flex-flow: row wrap;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
     justify-content: space-between;
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
     align-items: center;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -91,16 +103,24 @@ body {
 
 .menu{
     display: flex;
+    /*  Torna o elemento um flex container automaticamente
+    transformando todos os seus filhos diretos em flex itens */
     align-items: center;
     background: var(--primary-bg-color);
+    gap: 1rem;  /*    */ 
 }
 .menu-item{
     width: 100%;
 }
 .menu-link{
-    display: flex;
+    display: flex; 
+    /*  Torna o elemento um flex container automaticamente
+    transformando todos os seus filhos diretos em flex itens */
     align-items: center;
-    gap: .5rem;  /* */
+    gap: .5rem;  
+    /* usada para definir o espaço entre os elementos
+    criar espaçamento uniforme entre os elementos
+    */
 }
 
 .menu-mobile {
@@ -112,7 +132,8 @@ body {
 }
 
 .menu-mobile .menu-link {
-    flex-direction: column;  /*  */
+    flex-direction: column;  
+    /* definir a direção principal dos itens em uma coluna vertical */
     justify-content: center;
     padding: 0.5rem 1rem;
 }
@@ -120,7 +141,7 @@ body {
 .menu-link.active .menu-icon,
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon,
-.menu-link:hover .menu-text {
+.menu-link:hover .menu-text { /* a:hover = pseudo-classe  */
     color: var(--primary-color);
 }
 
