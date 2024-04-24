@@ -11,6 +11,7 @@
 
     --title-color: #F0f0f0;
     --text-color: #9a9a9c;
+    --text-color-mobile: blue;
     --link-color: #9a9a9c;
     --icon-color: #c7c8c9;
 
@@ -71,7 +72,55 @@ body {
     color: var(--text-color);
 }
 
-/* conteudo extra */
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--primary-color);
+}
+i {
+    color: var(--icon-color);
+}
+
+b {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
+}
+h4 {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: left;
+}
+h1, h2, h3{
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+}
+
+p, span, li {
+    font-size: 1rem;
+}
+p {
+    text-align: justify;
+}
+
+/***/
 
 #header {
     display: flex;
@@ -107,7 +156,7 @@ body {
     transformando todos os seus filhos diretos em flex itens */
     align-items: center;
     background: var(--primary-bg-color);
-    gap: 1rem;  /*    */ 
+    gap: 1rem;
 }
 .menu-item{
     width: 100%;
@@ -132,7 +181,7 @@ body {
 }
 
 .menu-mobile .menu-link {
-    flex-direction: column;  
+    flex-direction: column;
     /* definir a direção principal dos itens em uma coluna vertical */
     justify-content: center;
     padding: 0.5rem 1rem;
@@ -150,4 +199,33 @@ body {
 }
 .menu-icon{
     font-size: 1.5rem;
+}
+.menu-text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+/* 
+.header-nav {   menu desktop 
+    display: none;    none 
+}
+*/
+.menu-principal {
+    gap: 1rem;
+}
+.menu-social{
+    gap: 1rem;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.625rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
 }
