@@ -7,7 +7,7 @@
     /* bg = background = plano de fundo */
     --secondary-bg-color: #28292E;
     --primary-border-color: #28292E;
-    --secundary-border-color: #56575A;
+    --secondary-border-color: #56575A;
 
     --title-color: #F0f0f0;
     --text-color: #9a9a9c;
@@ -287,9 +287,14 @@ p {
     align-items: center;
     width: 4.8rem;
     height: 4.8rem;
-    border: 1px solid var(--secondary-border-color);
+    border: 3px solid var(--secondary-border-color);
     border-radius: 5rem;
 }
 .tecnologia-logo{
     height: 2.4rem;
+}
+
+.projetos {
+    
+
 }
