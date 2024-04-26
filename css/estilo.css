@@ -293,8 +293,55 @@ p {
 .tecnologia-logo{
     height: 2.4rem;
 }
-
 .projetos {
-    
-
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;    
+}
+.projeto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+/*
+#home, 
+.tecnologias, 
+.projetos .projeto-container,
+.sobre,
+.contato { 
+    display: flex;
+    flex-direction: column;
+}
+*/
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-cover {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.card-title {
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 400;
+}
+.card-descricao {
+    color: var(--title-color);
+}
+.card-lista .sobre-lista{
+    margin-left: 1.25rem;
+}
+.card-item, .sobre-item{
+    list-style: disc;
 }
