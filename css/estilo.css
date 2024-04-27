@@ -345,3 +345,28 @@ p {
 .card-item, .sobre-item{
     list-style: disc;
 }
+.card-button, .card-descricao{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+.card-button .btn span {
+    font-size: 1rem;
+}
+.card-body .tecnologias-lista {
+    gap: .75rem;
+}
+.card-body .tecnologia-item{
+    width: 4rem;
+    height: 4rem;
+}
+.card-body .tecnologia-logo{
+    height: 2rem;
+}
+.projetos .btn {
+    width: auto;
+    margin: auto;
+}
