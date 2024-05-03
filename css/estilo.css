@@ -371,3 +371,94 @@ p {
     margin: auto;
 }
 /* Sobre */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.sobre-content1, .sobre-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.sobre-logo {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    border-radius: 50rem;
+    border:  8px solid var(--primary-color);
+}
+.sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+.sobre-icones {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.sobre-icones i {
+    font-size: 1.25rem;
+}
+.sobre-content2 .col1, 
+.sobre-content2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}  
+
+.sobre-content2 .col1 .row1, 
+.sobre-content2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.accordion-header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-border-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.accordion-header span {
+    color: var(--title-color);
+}
+.accordion-header.start {
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+.accordion-header.end, 
+.accordion-item.active .accordion-body.end {
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+.accordion-item.active .accordion-item.end {
+    border-radius: 0;
+}
+.accordion-body {
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem;
+    border: 1px solid var(--primary-border-color);
+}
+.accordion-item.active .accordion-header {
+    background: var(--secondary-bg-color);
+}
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+.accordion-item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+}
+/* Contato */
