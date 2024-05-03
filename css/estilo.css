@@ -173,7 +173,7 @@ p {
 
 .menu-mobile {
     width: 100vw;  /* V W = viewport width*/
-    /* position: fixed; */
+    position: fixed;
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid var(--primary-border-color);   
