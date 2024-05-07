@@ -558,6 +558,47 @@ footer p {
         align-items: flex-start;
         gap: 4rem;
     }
-    
-    
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
 }
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    #home {
+        padding: 10rem 6rem 2rem;
+    }
+    .main-content .btn {
+        width: auto;
+    }
+    .tecnologias {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10rem 6rem 4rem;
+    }
+    .tecnologias h2 {
+        font-size: 3rem;
+        width: 55%;
+    }
+    .tecnologias-lista{
+        gap: 1rem;
+    }
+    .tecnologia-item {
+        width: 6rem;
+        height: 6rem;
+    }
+    .tecnologia-logo {
+        height: 3rem;
+    }
+    p, span, li {
+        font-size: 1.15rem;
+    }
+    
+} 
