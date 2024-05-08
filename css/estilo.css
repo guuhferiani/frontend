@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
-:root, :root[data-theme='dark'] {
+:root, 
+:root[data-theme='dark'] {
     --primary-color: #F0F0F0;  /* cor de texto */
     
     --primary-bg-color: #111217;  /* cor de fundo  */
@@ -119,7 +120,6 @@ p {
 }
 
 /***/
-
 #header {
     display: flex;
     flex-flow: row wrap;
