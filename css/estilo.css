@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
+/* Definir o tema dark do site */
 :root, 
 :root[data-theme='dark'] {
-    --primary-color: #F0F0F0;  /* cor de texto */
+    /* Definir cores padrão em variáveis */
+    --primary-color: #f0f0f0;  
+    /* cor de texto */
     
-    --primary-bg-color: #111217;  /* cor de fundo  */
+    --primary-bg-color: #131313;  /* cor de fundo  */
     /* bg = background = plano de fundo */
     --secondary-bg-color: #28292E;
     --primary-border-color: #28292E;
@@ -12,11 +15,11 @@
 
     --title-color: #F0f0f0;
     --text-color: #9a9a9c;
-    --link-color: #9a9a9c;
+    --link-color: #56575A;
     --icon-color: #c7c8c9;
 
 }
-:root [data-theme='light'] {
+:root[data-theme='light'] {
     --primary-color: #0B0B0F;
     --primary-bg-color: #E9E9E9;
     --secondary-bg-color: #C7c8c9;
@@ -39,10 +42,10 @@ Isso oferece uma maneira flexível de definir valores
 que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um único lugar.
 */
 
-html [data-theme='light'] .brand-logo {
+html[data-theme='light'] .logo {
     filter:invert(1);
 }
-html [data-theme='light'] .tecnologias-logo {
+html[data-theme='light'] .tecnologias-logo {
     filter: invert(80%);
 }
 /*  (*) reset do CSS */
@@ -185,11 +188,11 @@ p {
     padding: 0.5rem 1rem;
 }
 
-.menu-link.active .menu-icon,
+.menu-link.active .menu-icon, 
 .menu-link.active .menu-text,
-.menu-link:hover .menu-icon,
-.menu-link:hover .menu-text { /* a:hover = pseudo-classe  */
-    color: var(--primary-color);
+.menu-link:hover .menu-icon, 
+.menu-link:hover .menu-text {
+  color: var(--primary-color);
 }
 
 .menu-icon, .menu-text{
