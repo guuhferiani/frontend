@@ -61,9 +61,7 @@ html[data-theme='light'] .tecnologias-logo {
     para calcular a largura e a altura total de um elemento,
     incluindo a largura das bordas e o preenchimento, e não apenas o conteúdo.
     */
-   
-
-   /* vertical-align: baseline; */
+   vertical-align: baseline;
    list-style: none;
    scrollbar-width: thin;
    scrollbar-color: var(--secondary-bg-color) transparent;
@@ -73,7 +71,6 @@ body {
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
 }
-
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -84,11 +81,9 @@ a:hover {
 i {
     color: var(--icon-color);
 }
-
 b {
     font-weight: 400;
 }
-
 h1 {
     font-size: 2.5rem;
     font-weight: 200;
@@ -114,15 +109,12 @@ h1, h2, h3{
     color: var(--title-color);
     font-weight: 200;
 }
-
 p, span, li {
     font-size: 1rem;
 }
 p {
     text-align: justify;
 }
-
-/***/
 #header {
     display: flex;
     flex-flow: row wrap;
@@ -139,7 +131,6 @@ p {
     width: 3.25rem;
     height: 3.25rem;
 }
-
 .header-toggle {
     display: flex;
     justify-content: flex-end;
@@ -150,7 +141,6 @@ p {
     cursor: pointer;
     transition: ease-in-out .4s;
 }
-
 .menu{
     display: flex;
     /*  Torna o elemento um flex container automaticamente
@@ -172,7 +162,6 @@ p {
     criar espaçamento uniforme entre os elementos
     */
 }
-
 .menu-mobile {
     width: 100vw;  /* V W = viewport width*/
     position: fixed;
@@ -180,21 +169,18 @@ p {
     justify-content: space-between;
     border-top: 1px solid var(--primary-border-color);   
 }
-
 .menu-mobile .menu-link {
     flex-direction: column;
     /* definir a direção principal dos itens em uma coluna vertical */
     justify-content: center;
     padding: 0.5rem 1rem;
 }
-
 .menu-link.active .menu-icon, 
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon, 
 .menu-link:hover .menu-text {
   color: var(--primary-color);
 }
-
 .menu-icon, .menu-text{
     color: var(--text-color);
 }
@@ -205,11 +191,9 @@ p {
     font-size: .75rem;
     text-transform: uppercase;
 }
-/* 
-.header-nav {   menu desktop 
-    display: none;    none 
+.header-nav { 
+    display: none; 
 }
-*/
 .menu-principal {
     gap: 1rem;
 }
@@ -305,16 +289,6 @@ p {
     flex-direction: column;
     gap: 4rem;
 }
-/*
-#home, 
-.tecnologias, 
-.projetos .projeto-container,
-.sobre,
-.contato { 
-    display: flex;
-    flex-direction: column;
-}
-*/
 .projeto-card {
     display: flex;
     flex-direction: column;
@@ -413,8 +387,7 @@ p {
     flex-direction: column;
     text-align: justify;
     gap: 2rem;
-}  
-
+}
 .sobre-content2 .col1 .row1, 
 .sobre-content2 .col1 .row2 {
     display: flex;
@@ -491,9 +464,8 @@ footer p {
     text-align: center;
     padding: 1rem;
 }
-
-/* Responsividade */ 
-@media (min-width: 768px) { 
+/* Responsividade */
+@media (min-width: 768px) {
     #header {
         position: fixed;
         border-bottom: 1px solid var(--primary-border-color);
@@ -538,7 +510,6 @@ footer p {
         margin: 0;
     }
 }
-
 @media (min-width: 992px) {
     .projeto-card {
         flex-direction: row;
@@ -607,7 +578,6 @@ footer p {
         width: auto;
     }
 }
-
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.25rem;
