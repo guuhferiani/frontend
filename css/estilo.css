@@ -3,33 +3,29 @@
 /* Definir o tema dark do site */
 :root, 
 :root[data-theme='dark'] {
-    /* Definir cores padrão em variáveis */
-    --primary-color: #f0f0f0;  
-    /* cor de texto */
-    
-    --primary-bg-color: #131313;  /* cor de fundo  */
-    /* bg = background = plano de fundo */
+    --primary-color: #F0F0F0;
+    --primary-bg-color: #111217;
     --secondary-bg-color: #28292E;
     --primary-border-color: #28292E;
     --secondary-border-color: #56575A;
-
-    --title-color: #F0f0f0;
-    --text-color: #9a9a9c;
-    --link-color: #56575A;
-    --icon-color: #c7c8c9;
+    --title-color: #F0F0F0;
+    --text-color: #8f8f8f;
+    --link-color: #F0F0F0;
+    --icon-color: #C7C8C9;
 
 }
 :root[data-theme='light'] {
     --primary-color: #0B0B0F;
-    --primary-bg-color: #E9E9E9;
-    --secondary-bg-color: #C7c8c9;
-    --primary-border-color:  #C7c8c9;
-    --secondary-border-color: #9a9a9c;
 
-    --title-color: #0b0b0f;
-    --text-color: #28292e;
-    --link-color: #28292e;
-    --icon-color: #56575a;
+	--primary-bg-color: #E9E9E9;
+	--secondary-bg-color: #C7C8C9;
+	--primary-border-color: #C7C8C9;
+	--secondary-border-color: #9A9A9C;
+
+	--title-color: #0B0B0F;
+	--text-color: #a3a2a2;
+	--link-color: #0B0B0F;
+	--icon-color: #56575A;
 }
 /*
 definindo variáveis de cores para um tema claro e um tema escuro
@@ -41,11 +37,10 @@ seletor :root define as variáveis globais
 Isso oferece uma maneira flexível de definir valores
 que podem ser reutilizados em todo o seu CSS e facilmente atualizados de um único lugar.
 */
-
 html[data-theme='light'] .logo {
     filter:invert(1);
 }
-html[data-theme='light'] .tecnologias-logo {
+html[data-theme='light'] .tecnologia-logo {
     filter: invert(80%);
 }
 /*  (*) reset do CSS */
@@ -179,10 +174,12 @@ p {
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon, 
 .menu-link:hover .menu-text {
-  color: var(--primary-color);
+  color: var(--link-color);
+  
 }
 .menu-icon, .menu-text{
     color: var(--text-color);
+    font-weight: 600;
 }
 .menu-icon{
     font-size: 1.5rem;
