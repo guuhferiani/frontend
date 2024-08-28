@@ -1,0 +1,302 @@
+/*  Google Fonts */  /* Atalho para Comentar Shift + ALT + A  */
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Variaveis das Cores */
+/* TEMA DARK */
+:root, :root[data-theme='dark'] {
+    --primary-color: #f0f0f0;  /*cor principal Textos*/
+    --primary-bg-color: #171111;  /*cor principal Fundo*/ 
+    /* bg = background == cor do Fundo */
+    --secondary-bg-color: #28292E;  
+    --primary-border-color: #28292E;
+    --secondary-border-color: #c1c2c4;
+    --title-color: #F0F0F0;
+    
+    --link-color: #8f8f8f;
+    --link-hover: #F0F0F0;
+
+    --icon-color: #C7C8C9;
+}
+/* TEMA LIGHT */
+:root[data-theme='light'] {
+    --primary-color: #0d0c09; /* cor principal textos */
+
+    --primary-bg-color: #f0f2f5;
+    --secondary-bg-color: #C7C8C9;
+
+    --primary-border-color: #C7C8C9;
+	--secondary-border-color: #9A9A9C;
+
+	--title-color: #0B0B0F;
+	--link-hover: #a3a2a2;
+	--link-color: #0B0B0F;
+	--icon-color: #56575A;
+}
+
+/* Reset CSS */
+* {
+    margin: 0; /*margem */
+    padding: 0px; /* preenchimento */
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
+}
+
+body {
+    background: var(--primary-bg-color); /*cor fundo*/
+    color: var(--primary-color);  /*cor geral dos textos*/
+    font-family: 'Playwrite', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+i {
+   color: var(--icon-color); 
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
+    justify-content: space-between;
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;/*sobreposição*/
+}
+   
+.header-logo .logo{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.header-logo .logo2 {
+    width: 15rem;
+    height: 2rem;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+html[data-theme='light'] .logo {
+    filter: invert(1);
+} 
+
+html[data-theme='light'] .logo2 {
+    filter: invert(1);
+} 
+
+#toggleTheme {
+    font-size: 1.5rem; 
+    color: var(--icon-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+
+.menu {
+    display: flex;
+    /* Torna o Elemento um Flex container automaticamente transformando todos os filhos diretos em Flex Itens  */
+    align-items: center;
+    background: var(--primary-bg-color);
+    gap: 1rem;
+} 
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu-mobile {   /* UL */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem 1rem;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: var(--link-hover);
+}
+
+.menu-icon, .menu-text {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+.menu-text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    display: none;
+}
+
+.menu-principal {
+    gap: 1rem;
+}
+
+.menu-social {
+   gap: 1rem; 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    transition: ease-in-out .3s;
+}
+
+.btn-primary {
+    border: 1px solid var(--secondary-border-color);
+}
+
+.btn:hover {
+    transform: scale(1.07);
+    transition: ease-in-out 0.5s;
+}
+
+.btn span,
+.btn i {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.btn-primary span {
+    color: var(--primary-color);
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home, .projetos, .sobre, .contato {
+    padding: 5rem 5rem;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card-cover {
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.card-description {
+    color: var(--primary-color);
+    /* font-size: ; */
+    text-align: justify;
+}
+
+.card-lista {
+    margin-left: 2rem;
+}
+
+.card-item {
+    list-style: circle;
+    margin: 0.25rem;
+}
+
+.card-button, .card-description {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+
+.card-button span {
+    font-size: 1rem;
+}
+
+
+
+
+/* =====  --------------------- ======= */
+
+/* CSS Responsivo */
+@media (min-width: 768px)  {
+    .header {
+        position: fixed;
+        border-bottom: 3px solid var(--primary-border-color);
+        padding: 1rem 6rem;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav {
+        display: flex;
+    }
+}
+
+
